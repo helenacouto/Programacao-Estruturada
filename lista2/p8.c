@@ -14,7 +14,7 @@ int mediaPositivos(float valores[], int *positivos) {
 }
 
 int main() {
-    float valores[] = {0, 0, 0, 0, 0, 0}, media;
+    float valores[6], media;
     int positivos;
 
     printf("Digite seis valores: ");
