@@ -65,8 +65,11 @@ int main() {
     printf("\n\n%d valor(es) igual a zero.", qntdZeros);
 
     free(positivos);
+    positivos = NULL;
     free(negativos);
+    negativos = NULL;
     free(vetor);
+    vetor = NULL;
 
     return 0;
 }
