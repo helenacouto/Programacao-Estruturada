@@ -4,7 +4,7 @@
 void cadastrarProdutos(Produto *produtos, int n) {
     int i;
     for (i = 0; i < n; i++) {
-        printf("\n==== PRODUTO %d ====\n", i + 1);
+        printf("\n--- PRODUTO %d ---\n", i + 1);
 
         printf("Codigo: ");
         scanf("%s", produtos[i].codigo);
@@ -21,9 +21,11 @@ void cadastrarProdutos(Produto *produtos, int n) {
 }
 
 void listarProdutos(Produto *produtos, int n) {
+    printf("==== LISTA DOS PRODUTOS CADASTRADOS ====");
+    
     int i;
     for (i = 0; i < n; i++) {
-        printf("\n\n====PRODUTO %d====\n", i + 1);
+        printf("\n--- PRODUTO %d ---\n", i + 1);
 
         printf("Codigo: %s\n", produtos[i].codigo);
 
@@ -48,7 +50,7 @@ void listarProdutos(Produto *produtos, int n) {
 void listarProdutosCategoria(Produto *produtos, int n, Categoria categEscolhida) {
     int i, encontrou = 0;
 
-    printf("\n\n==== PRODUTOS DA CATEGORIA ====\n");
+    printf("\n\n==== PRODUTOS DA CATEGORIA ESCOLHIDA ====\n");
 
     for (i = 0; i < n; i++) {
         if (categEscolhida == produtos[i].categoria) {
